@@ -361,12 +361,14 @@ body{
   background-color: var(--main-color);
 }
 #welcome h1{
+  line-height: 45px;
   width:120px;
   color:white;
   margin:0;
   position: absolute;
   left:0.5em;
-  top:30%;
+  /*top:30%;*/
+  top:22%;
 }
 #welcome a{
   display: block;
