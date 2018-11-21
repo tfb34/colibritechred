@@ -6,13 +6,32 @@ function toggleMenu(){
   menuBtn.classList.toggle("change");
   menu.classList.toggle("show");
   setTimeout(fadeUp, 100);
+
 }
 
 function fadeUp(){
-	console.log("hello");
 	let arr = document.getElementById('list').children;
-	console.log(arr);
 	for(let i=0;i<arr.length;i++){
 		arr[i].classList.toggle('fadeUp');
+	}
+}
+
+let a = Array.from(document.getElementsByClassName('animate'));
+window.onscroll = function(e){
+	
+	if(a[0] && isVisible(a[0])){
+		a[0].classList.toggle('doSomething');
+		a.shift();
+	}
+	//arr[] if visible fadeIn
+}
+
+function isVisible(el){
+	let screenH = window.screen.height;
+	let rect = el.getBoundingClientRect().top;
+	if(rect > 0 && rect < (screenH-(screenH/3))){
+		return true;
+	}else{
+		return false;
 	}
 }

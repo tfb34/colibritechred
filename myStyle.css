@@ -369,6 +369,10 @@ body{
   left:0.5em;
   /*top:30%;*/
   top:22%;
+  animation-name: moveUp;
+  animation-duration: 0.8s;
+  animation-fill-mode:both;
+  animation-delay: 0.7s;
 }
 #welcome a{
   display: block;
@@ -382,6 +386,12 @@ body{
   font-weight: bold;
   left:1.2em;
   top:60%;
+  z-index: 10;
+  animation-name: moveDown;
+  animation-duration: 0.8s;
+  animation-fill-mode:both;
+  animation-delay: 0.8s;
+
 }
 #welcome #img-wrapper{
     line-height: 0;
@@ -422,14 +432,14 @@ body{
   transition: 0.4s;
 }
 .change .bar1{
-  -webkit-transform: translateY(6px)           rotate(45deg);
+  -webkit-transform: translateY(6px) rotate(45deg);
   transform: translateY(6px) rotate(45deg);
 }
 .change .bar2{
     opacity: 0;
 }
 .change .bar3{
-  -webkit-transform: translateY(-8px)      rotate(-45deg);
+  -webkit-transform: translateY(-8px) rotate(-45deg);
   transform: translateY(-8px) rotate(-45deg);
 }
 .padding{
@@ -583,6 +593,34 @@ ul li{
 .fadeUp{
   opacity:1 !important;
   transform: translateY(0px) !important;
+}
+.animate{
+  transition: 1s;
+  opacity:0;
+}
+.doSomething{
+  opacity: 1 !important;
+}
+
+@keyframes moveUp{
+  0%{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform:  translateY(0px);
+  }
+}
+@keyframes moveDown{
+  0%{
+    opacity:0;
+    transform: translateY(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform:  translateY(0px);
+  }
 }
 /*@keyframes fadeUp{
   0%{
