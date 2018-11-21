@@ -29,7 +29,7 @@ window.onscroll = function(e){
 function isVisible(el){
 	let screenH = window.screen.height;
 	let rect = el.getBoundingClientRect().top;
-	if(rect > 0 && rect < (screenH-(screenH/3))){
+	if(rect > 0 && rect < (screenH-(screenH/5))){
 		return true;
 	}else{
 		return false;
