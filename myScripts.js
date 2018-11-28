@@ -1,4 +1,6 @@
-
+window.onbeforeunload = function (){
+	window.scrollTo(0,0);
+}
 
 function toggleMenu(){
   let menuBtn = document.getElementById('menu-btn');

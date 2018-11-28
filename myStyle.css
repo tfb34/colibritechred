@@ -353,6 +353,7 @@ body{
 :root{
   --main-color: rgb(255,92,69);
   --dark-color: rgb(59,61,75);
+  --btn-color: #007AFF;
 }
 #welcome{
   position: relative;
@@ -448,7 +449,7 @@ body{
   transform: translateY(-8px) rotate(-45deg);
 }
 .padding{
-  padding:4em 0.5em;
+  padding:4em 1em;
 }
 #skills{
   text-align: center;
@@ -457,7 +458,7 @@ body{
   margin-top: 0;
   margin-bottom: 2px;
 }
-#skills #line{
+#line{
   width: 187px;
 }
 #skills > p{
@@ -654,3 +655,126 @@ ul li{
 .fadeUp{
   animation-name: fadeUp;
 }*/
+
+/*CONTACT-PAGE */
+
+.headline-container{
+  height:100vh;
+  width:100%;
+  position: relative;
+  text-align: center;
+}
+.headline-container#contact{
+  background: url("assets/contact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.headline-container content{
+  padding-top: 20vh;
+  display: block;
+}
+.headline-container h1{
+  margin:0;
+  color:white;
+  margin-bottom: 15vh;
+}
+.headline-container ul{
+  padding:0;
+  color:white;
+  margin-bottom: 2em;
+}
+.headline-container ul li{
+  padding:0.5em;
+}
+.headline-container a{
+  text-decoration: none;
+  color:white;
+  background-color: var(--btn-color);
+  font-weight: bold;
+  padding:1em 1em;
+  border-radius: 8px;
+  font-size:12px;
+}
+.headline-container img{
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+.headline-container #phone-number{
+  font-weight:bold;
+}
+.headline-container #hours{
+  font-size: 14px;
+  color:#E5E5E5;
+  font-weight: bold;
+}
+#contact-info{
+  text-align: center;
+}
+#contact-info div{
+  margin-bottom:3em;
+}
+#contact-info div:last-of-type{
+  margin-bottom: 0;
+}
+#contact-info p{
+    font-weight: 800;
+    color: var(--dark-color);
+    font-size:14px;
+}
+#contact-info img{
+  height:30px;
+}
+#form{
+  padding-top:0;
+}
+#form h3{
+  text-align: center;
+  color:var(--dark-color);
+}
+#form #line{
+  margin:0 auto;
+  display: block;
+}
+form{
+  margin-top:3em;
+}
+form p{
+  font-size:14px;
+  font-weight: bold;
+  margin-bottom:0;
+  color: var(--dark-color);
+}
+form input, select{
+  width:100%;
+  height:50px;
+  margin:0 auto;
+  display: block;
+  margin-bottom:2.5em;
+  padding-left:1em;
+  box-sizing: border-box;
+}
+form select{
+  background-color:white;
+}
+form input::placeholder, select::placeholder,textarea::placeholder{
+  color:#B1ADAD;
+}
+form input, select, textarea{
+  font-size:12px;
+  font-weight: bold;
+}
+textarea{
+  width:100%;
+  height:100px;
+  padding:1em;
+  box-sizing: border-box;
+}
+
+input[type="submit"]{
+  background-color:var(--main-color);
+  color:white;
+  font-weight: bold;
+  border:0px;
+  margin-top:2em;
+  font-size:14px;
+}
