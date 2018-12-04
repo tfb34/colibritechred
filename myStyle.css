@@ -787,6 +787,7 @@ input[type="submit"]{
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
+  display: block;
 }
 
 .service-intro h1, .service-intro p{
