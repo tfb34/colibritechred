@@ -781,7 +781,7 @@ input[type="submit"]{
 /* SERVICE PAGES*/
 .service-intro{
   width:100%;
-  height: 50vh;
+  height: 300px;
   background-color: red;
   color:white;
   overflow-x: hidden;
@@ -801,7 +801,8 @@ input[type="submit"]{
 .service-intro h1{
   text-align: left;
   margin:0;
-  padding-top:18vh;
+ /* padding-top:18vh;*/
+ padding-top:90px;
 }
 .service-intro p{
   text-align: left;
