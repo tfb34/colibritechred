@@ -785,6 +785,7 @@ input[type="submit"]{
   background-color: var(--dark-color);
   color:white;
   overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 
