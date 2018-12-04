@@ -815,6 +815,7 @@ input[type="submit"]{
     position: absolute;
     bottom: -1em;
     left: 0;
+    z-index:500;
 }
 .content.padding{
   padding-top: 2em;
