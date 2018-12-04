@@ -787,6 +787,7 @@ input[type="submit"]{
   overflow-x: hidden;
   position: relative;
 }
+
 .service-intro h1, .service-intro p{
   padding-left:13vw;
 }
@@ -869,4 +870,11 @@ input[type="submit"]{
 .highlight{
   color:var(--main-color) !important;
 }
-
+/* Fix */
+.white-box{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:5px;
+  background-color: red;
+}
