@@ -11,6 +11,12 @@ function toggleMenu(){
 
 }
 
+function toggle(){
+	let sublinks = document.getElementsByClassName("sub-links");
+	for(let i = 0; i< sublinks.length; i++){
+		sublinks[i].classList.toggle('show');
+	}
+}
 function fadeUp(){
 	let arr = document.getElementById('list').children;
 	for(let i=0;i<arr.length;i++){
