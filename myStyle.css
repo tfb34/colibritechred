@@ -885,6 +885,10 @@ input[type="submit"]{
   float: left;
   margin: 0 0.5em 0.5em 0;
 }
+.right{
+  float: right;
+  margin: 0 0 0.5em 0.5em;
+}
 .content-text{
     font-family: sans-serif;
     color: rgba(0,0,0,0.7);
