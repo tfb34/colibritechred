@@ -892,6 +892,8 @@ input[type="submit"]{
 .content-text{
     font-family: sans-serif;
     color: rgba(0,0,0,0.7);
+    width:290px;
+    margin:0 auto;
     margin-top: 3em;
 }
 #network-support-btn{
@@ -927,3 +929,4 @@ input[type="submit"]{
 .grey-bg{
   background-color: var(--grey);
 }
+
