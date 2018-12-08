@@ -28,8 +28,13 @@ let a = Array.from(document.getElementsByClassName('animate'));
 window.onscroll = function(e){
 	
 	if(a[0] && isVisible(a[0])){
-		a[0].classList.toggle('doSomething');
-		a.shift();
+		if(a[0].classList.contains('parallax-img')){
+			a[0].classList.toggle('moveUp');
+			a.shift();
+		}else{
+			a[0].classList.toggle('doSomething');
+			a.shift();
+		}
 	}
 	//arr[] if visible fadeIn
 }

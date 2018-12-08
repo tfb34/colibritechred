@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>colibritech</title>
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,600" rel="stylesheet">
+</head>
+<body>
+	<div id="menu-btn" onclick="toggleMenu()">
+	  <div class="bar1"></div>
+	  <div class="bar2"></div>
+	  <div class="bar3"></div>
+	</div>
+	<div id="mobile-menu">
+		<ul id="list">
+			<li><a href="index.html">Home</a></li>
+			<li class=""><a href="#">About</a></li>
+			<li class="current"><button onclick="toggle()">+</button><a href="#">Services</a></li>
+			<li class="sub-links"><a href="network-support.html">Network Support</a></li>
+			<li class="sub-links"><a href="computer-repair.html">Computer Repair</a></li>
+			<li class="sub-links"><a href="web-design.html" class="highlight">Web Design</a></li>
+			<li class="sub-links"><a href="#">Voice and Data</a></li>
+			<li><a href="contact-us.html">Let's Talk !</a></li>
+		</ul>
+	</div>
+	<section class="service-intro">
+		<h1>Web <br>Design<img src="assets/web-design.svg"></h1>
+		<p>Need a website to showcase your work or reach a wider audience? Colibritech's web design is devoted to creating a professional image for your brand.</p>
+		<svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270" >
+	   	 <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round"/>
+	  </svg>
+	</section>
+	<section class="padding content">
+		<div class="product-info">
+			<h2>Product</h2>
+			<p>We design and develop landing pages,
+			corporate web sites, and e-commerce applications.
+			Our testing guarantees you get a fully-functional
+			site in a timely manner.</p>
+		</div>
+		<div class="two-moving-pics">
+			<img src="assets/product-browser.svg" class="back parallax-img animate">
+			<img src="assets/product-mobile.svg" class="front parallax-img animate" style="left: 0">
+		</div>
+		<svg id="svg" width="375" height="71" viewBox="0 0 375 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 71C127.688 31.69 200.24 10.1791 381 0V71H0Z" fill="#EFF0F1"/>
+		</svg>
+	</section>
+	<section class="padding content" style="background-color: #EFF0F1">
+		<div class="product-info">
+			<h2>Our Strategy</h2>
+			<p>We design for you. We create mockups so that
+			you can see what you’re buying and provide
+			additional feedback if any. Once an agreement on 
+			design has been established the development of the site can begin. </p>
+		</div>
+		<div class="two-moving-pics">
+			<img src="assets/product-back2.svg" class="back parallax-img animate" style="left:0">
+			<img src="assets/product-front2.svg" class="front parallax-img animate" style="right: 0">
+		</div>
+		<svg id="svg" width="375" height="71" viewBox="0 0 375 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 71C127.688 31.69 200.24 10.1791 381 0V71H0Z" fill="#EFF0F1"/>
+		</svg>
+	</section>
+	<section class="padding content">
+		<div id="one" class="product-info animate">
+			<h2>Our features</h2>
+			<p class="border">
+			We care about our clients and we strive to reach the best results within a short period of time. We test and then test again to make sure your site is open to the public and functioning correctly. We also design the mobile version for your web site for free! 
+			</p>
+		</div>
+		<div id="two" class="product-info animate">
+			<h2>Pricing</h2>
+			<p class="border">
+			The mimimum price for the web site development is 499 USD, which includes
+			the web design of one page, responsive front end, and hosting. The price
+			may vary depending on the functionality that you would like to have. 
+			</p>
+		</div>
+	</section>
+	<section id="portfolio" class="padding content">
+		<h2>Example Work</h2>
+		<div id="gallery-container">
+			<a target="_blank" rel="noopener noreferrer" href="http://jscpagrowth.com/"><img src="assets/portfolio1.png" id="one" class="animate"></a>
+			<a target="_blank" rel="noopener noreferrer" href="https://tfb34.github.io/template2/"><img src="assets/portfolio2.png" id="two" class="animate"></a>
+			<a target="_blank" rel="noopener noreferrer" href="https://tfb34.github.io/portfolio-template/"><img src="assets/portfolio3.png" id="three" class="animate"></a>
+		</div>	
+	</section>
+	<section class="padding banner">
+		<h2>Ready To Meet All Your Computer Needs?</h2>
+		<p>We have been serving local businesses since 2003 by providing top-quality solutions at affordable prices.</p>
+		<a href="#" class="button">Contact Us</a>
+	</section>
+	<footer>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#" class="bold">Services</a>
+		<a href="#">Contact Us</a>
+		<img src="assets/facebook-white.svg">
+		<img src="assets/twitter-white.svg">
+		<img src="assets/linkedIn-white.svg">
+		<img src="assets/colibritech.svg" id="logo-name">
+		<p>&copy;2018.All rights reserved.</p>
+	</footer>
+	<script type="text/javascript" src="myScripts.js"></script>
+</body>
+</html>
